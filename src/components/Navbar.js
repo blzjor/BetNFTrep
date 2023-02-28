@@ -69,7 +69,7 @@ export default function DashboardNavbar() {
             <Link to="/items">
               <VuiButton sx={{ marginRight: '10px' }} variant="contained" color="info" size="small">
                 <VuiTypography variant="button" fontWeight="medium" color="white">
-                  Marketplace
+                  Bet Marketplace
                 </VuiTypography>
               </VuiButton>
             </Link>
@@ -81,7 +81,7 @@ export default function DashboardNavbar() {
                 size="small"
               >
                 <VuiTypography variant="button" fontWeight="medium" color="white">
-                  Create NFT
+                  Create Bet NFT
                 </VuiTypography>
               </VuiButton>
             </Link>

@@ -16,7 +16,7 @@ export default function PageLayout({ children }) {
         //   gradients.cover.stateSecondary,
         //   gradients.cover.deg
         // ),
-        backgroundColor : 'mediumblue',
+        backgroundColor : 'cornflowerblue',
         position: 'relative',
       })}
     >
