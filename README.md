@@ -46,4 +46,6 @@ Feb 27 to Feb 28
 
 - Paul Pandi - Smart Contract & Full-Stack Developer
 
+- Amalan Stallone - Graphic Design
+
 <h5>Blaze Web Services Madurai, https://blaze.ws </h5>
