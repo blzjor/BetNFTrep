@@ -14,6 +14,8 @@ Feb 27 to Feb 28
 
 - Seller portal
 
+- Marketplace Bet Winner
+
 <h3> We did everything just in last 48 hours!! </h3>
 
 
