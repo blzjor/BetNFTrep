@@ -1,5 +1,7 @@
 # BetNFT / Flow Hackathon 
 
+<img width="20%" src ="https://raw.githubusercontent.com/blzjor/BetNFTrep/main/MicrosoftTeams-image.png?token=GHSAT0AAAAAAB7KBH64J6FSSMRB7S5TYH5OY757MBA">
+
 <b> Betting NFT on Flow blockchain - An Hackathon project to create NFTS and Bet NFTs</b>
 
 Sellers & Buyers will bet their NFT, Marketplace will send the Price amount to the Winners!
