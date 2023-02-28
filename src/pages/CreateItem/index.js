@@ -15,6 +15,8 @@ import VuiBox from 'vui-theme/components/VuiBox';
 import VuiButton from 'vui-theme/components/VuiButton';
 import VuiInput from 'vui-theme/components/VuiInput';
 import VuiTypography from 'vui-theme/components/VuiTypography';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 export default function CreateItem() {
   const navigate = useNavigate();
@@ -27,7 +29,14 @@ export default function CreateItem() {
     description: '',
   });
   const [imagePreview, setImagePreview] = useState();
-
+  const addStartDate = (date) =>{
+    const itemData = {
+      ...item,
+      startDate:date,
+    };
+    setItem(itemData)
+    console.log("new Date(date).toUTCString()",new Date(date).toUTCString())
+  }
   const onUploadImage = (e) => {
     const files = e.target.files;
     if (files.length > 0) {
@@ -40,7 +49,9 @@ export default function CreateItem() {
     const itemData = {
       ...item,
       mintedDate: new Date().toUTCString(),
+      startDate:new Date(item.startDate).toUTCString()
     };
+    console.log("itemData",itemData)
     try {
       const ipfsHash = await mint(ipfsAPIKey, itemData, dispatch);
       await getUserNFTs(dispatch, user?.addr);
@@ -60,7 +71,7 @@ export default function CreateItem() {
     <VuiBox py={3} sx={{ minHeight: '80vh' }}>
       <VuiBox mb={3}>
         <VuiTypography color="white" fontWeight="bold">
-          Create New Item
+          Create New Bet
         </VuiTypography>
       </VuiBox>
       <Grid container spacing={3}>
@@ -68,21 +79,51 @@ export default function CreateItem() {
           <Grid container spacing={3}>
             <Grid item md={12}>
               <VuiTypography color="white" variant="body2">
-                Name
+                Bet Name
               </VuiTypography>
               <VuiInput
                 id="name"
                 name="name"
                 value={item.name}
                 onChange={(e) => handleInputChange(e, setItem)}
-                placeholder="Item name"
+                placeholder="Bet Name"
                 fullWidth
                 size="medium"
               />
             </Grid>
             <Grid item md={12}>
               <VuiTypography color="white" variant="body2">
-                Description{' '}
+                Bet Price (FLOW)
+              </VuiTypography>
+              <VuiInput
+                id="price"
+                name="price"
+                value={item.price}
+                onChange={(e) => handleInputChange(e, setItem)}
+                placeholder="Bet Price (FLOW)"
+                fullWidth
+                size="medium"
+                type="number"
+              />
+            </Grid>
+	   		<Grid item md={12}>
+              <VuiTypography color="white" variant="body2">
+                Bet Date
+              </VuiTypography>
+              <DatePicker selected={item.startDate} onChange={(date) => addStartDate(date)} dateFormat="yyyy/MM/dd" className="MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth css-xhvqcz-MuiInputBase-root" />
+             {/* <VuiInput
+                id="bet_date"
+                name="bet_date"
+                value={item.bet_date}
+                onChange={(e) => handleInputChange(e, setItem)}
+                placeholder="Bet Date"
+                fullWidth
+                size="medium"
+              /> */}
+            </Grid>
+            <Grid item md={12}>
+              <VuiTypography color="white" variant="body2">
+                Bet Details{' '}
                 <VuiTypography display="inline" color="dark" variant="p" sx={{ fontSize: '12px' }}>
                   (Optional)
                 </VuiTypography>
@@ -94,7 +135,7 @@ export default function CreateItem() {
                 onChange={(e) => handleInputChange(e, setItem)}
                 multiline
                 rows={3}
-                placeholder="Item description"
+                placeholder="Bet Details"
                 fullWidth
                 size="medium"
               />
