@@ -20,7 +20,7 @@ import {
   navbarIconButton,
   navbarRow,
 } from 'vui-theme/examples/Navbars/DashboardNavbar/styles';
-import header_logo from 'assets/images/blaze-ws-logo.png';
+import header_logo from 'assets/images/bet-nft-logo.png';
 
 export default function DashboardNavbar() {
   const navigate = useNavigate();
@@ -56,11 +56,11 @@ export default function DashboardNavbar() {
       sx={(theme) => navbar(theme, { transparentNavbar: true })}
     >
       <Toolbar sx={(theme) => navbarContainer(theme)}>
-        <VuiBox color="inherit" mb={{ xs: 1, md: 0 }} sx={(theme) => navbarRow(theme, {})}>
-          <Link to="/">
+        <VuiBox  color="inherit" mb={{ xs: 1, md: 0 }} sx={(theme) => navbarRow(theme, {})}>
+          <Link style={{width:'200px'}} to="/">
             <VuiTypography variant="button" fontWeight="medium" color="white">
               {/* NFTMarketFlow */}
-              <img style={{width :'80%'}} src={header_logo}></img>
+              <img style={{width :'60%'}} src={header_logo}></img>
             </VuiTypography>
           </Link>
         </VuiBox>
