@@ -63,7 +63,7 @@ export default function PurchaseModal({ open, setOpen, item, handlePurchase }) {
             color="success"
             variant="contained"
           >
-            Buy NFT
+            Accept Bet
           </VuiButton>
           <VuiButton
             onClick={() => {

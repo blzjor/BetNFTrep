@@ -129,7 +129,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
         <VuiBox color="inherit" mb={{ xs: 1, md: 0 }} sx={(theme) => navbarRow(theme, { isMini })}>
           <Link to="/">
             <VuiTypography variant="button" fontWeight="medium" color="white">
-              NFTMarketFlow
+              Bet NFT
             </VuiTypography>
           </Link>
         </VuiBox>

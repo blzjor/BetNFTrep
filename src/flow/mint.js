@@ -27,7 +27,7 @@ export const mint = async (apiKey, metadata, dispatch) => {
     fcl.arg(metadataCadenceDict, t.Dictionary({ key: t.String, value: t.String })),
   ]);
 
-  setLoadingAction(dispatch, true, 'Minting NFT...');
+  setLoadingAction(dispatch, true, 'Minting Bet NFT...');
   const mintNFTCodeText = await (await fetch(mintNFTCadence)).text();
   const transaction = await fcl.send([
     fcl.transaction(mintNFTCodeText),

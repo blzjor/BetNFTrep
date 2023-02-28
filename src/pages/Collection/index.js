@@ -73,7 +73,7 @@ export default function Collection() {
     <VuiBox py={3}>
       <VuiBox mb={3}>
         <VuiTypography color="white" fontWeight="bold">
-          NFT Collection
+          Bet Collection
         </VuiTypography>
       </VuiBox>
       <Grid container spacing={5} direction="row" alignItems="stretch">
@@ -97,7 +97,7 @@ export default function Collection() {
       <VuiBox py={3}>
         <VuiBox mb={3}>
           <VuiTypography color="white" fontWeight="bold">
-            NFT Collection
+            Bet Collection
           </VuiTypography>
         </VuiBox>
         <VuiBox sx={{ borderBottom: 1, borderColor: 'divider', marginBottom: '10px' }}>

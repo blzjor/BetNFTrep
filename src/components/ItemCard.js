@@ -83,7 +83,7 @@ export default function ItemCard({
                 size="small"
                 color="warning"
               >
-                Remove from sale
+                Remove Bet
               </VuiButton>
             ) : (
               !isOwner &&
@@ -95,7 +95,7 @@ export default function ItemCard({
                   size="small"
                   color="success"
                 >
-                  Buy NFT
+                  Accept Bet
                 </VuiButton>
               )
             )
@@ -108,7 +108,7 @@ export default function ItemCard({
               size="small"
               color="success"
             >
-              List For Sale
+              List Bet
             </VuiButton>
           )}
         </VuiBox>
