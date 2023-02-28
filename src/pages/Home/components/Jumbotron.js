@@ -22,11 +22,11 @@ export default function Jumbotron() {
             color="info"
             fontWeight="medium"
           >
-            Bet Marketplace
+            Bet Explore
           </VuiButton>
         </VuiBox>
         <VuiButton component={Link} to="/create" variant="contained" color="success">
-          Create Bet NFT
+          Create Bet
         </VuiButton>
       </VuiBox>
     </VuiBox>
