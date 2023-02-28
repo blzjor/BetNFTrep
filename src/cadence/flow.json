@@ -1,0 +1,26 @@
+{
+	"name": "Bed NFT",
+	"contracts": 
+	{
+		"FlowToken": "./contracts/FlowToken.cdc",
+		"FungibleToken": "./contracts/FungibleToken.cdc",
+		"NFTStore": "./contracts/NFTStore.cdc",
+		"NFTMarketPlace": "./contracts/NFTMarketplace.cdc",
+		"NonFungibleToken": "./contracts/NonFungibleToken.cdc"
+	},	
+	"networks": {		
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {		
+		"testnet-account": {
+			"address": "637a386e1116dc02",
+			"key": "0xfdf1dcd529352f120f79d2af1fc7599a804b8afddd6e931300822be7dcb77e67"
+		}
+	},
+	"deployments": {		
+		"testnet": {
+			"testnet-account": ["FlowToken","FungibleToken","NFTStore","NFTMarketPlace","NonFungibleToken"]
+		}		
+	}
+  }
