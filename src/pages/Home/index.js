@@ -3,7 +3,7 @@ import { Box } from '@mui/system';
 import { getActivities } from 'api/activities';
 import { getActivitiesByUser } from 'api/activities';
 import { getSaleItems } from 'api/saleItems';
-import mainScreenImage from 'assets/images/banner2.jpg';
+import mainScreenImage from 'assets/images/banner3.png';
 import { useEffect, useState } from 'react';
 import { useGlobalContext } from 'state/context';
 import { sortItemsByRecentDate } from 'utils/utils';

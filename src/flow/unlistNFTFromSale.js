@@ -4,7 +4,7 @@ import unlistNFTFromSaleCadence from 'cadence/transactions/UnlistNFTFromSale.cdc
 import { setLoadingAction } from 'state/actions/loadingActions';
 
 export const unlistNFTFromSale = async (id, dispatch) => {
-  setLoadingAction(dispatch, true, 'Unlisting NFT from sale...');
+  setLoadingAction(dispatch, true, 'Unlisting Bet...');
 
   const unlistNFTFromSaleCodeText = await (await fetch(unlistNFTFromSaleCadence)).text();
   const transaction = await fcl.send([
