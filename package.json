@@ -1,6 +1,6 @@
 {
   "name": "betnft",
-  "homepage": "https://bymi15.github.io/nftmarketflow",
+  "homepage": "https://betnft.hyperbig.com/",
   "version": "0.1.0",
   "private": true,
   "author": "Isakki Muthu",
@@ -34,6 +34,7 @@
     "react": "^18.0.0",
     "react-apexcharts": "^1.3.9",
     "react-countup": "5.2.0",
+    "react-datepicker": "^4.10.0",
     "react-dom": "^18.0.0",
     "react-flatpickr": "3.10.7",
     "react-github-btn": "1.2.1",

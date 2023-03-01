@@ -85,11 +85,11 @@ export const getActivityDescription = (activity, userAddr, withUser = true) => {
     case 'LIST':
       return withUser ? (
         <>
-          listed by {userDisplay} for <b>{activity.price} FLOW</b>
+          listed bet by {userDisplay} for <b>{activity.price} FLOW</b>
         </>
       ) : (
         <>
-          was <b>listed</b> for <b>{activity.price} FLOW</b>
+          was <b>listed bet</b> for <b>{activity.price} FLOW</b>
         </>
       );
     case 'MINT':
@@ -103,11 +103,11 @@ export const getActivityDescription = (activity, userAddr, withUser = true) => {
     case 'SALE':
       return withUser ? (
         <>
-          purchased by {userDisplay} for <b>{activity.price} FLOW</b>
+          accepted bet by {userDisplay} for <b>{activity.price} FLOW</b>
         </>
       ) : (
         <>
-          was <b>purchased</b> for <b>{activity.price} FLOW</b>
+          was <b>accepted bet</b> for <b>{activity.price} FLOW</b>
         </>
       );
     default:

@@ -17,6 +17,6 @@ transaction(account: Address, id: UInt64) {
     }
     
     execute {
-        log("Transaction executed: purchased NFT")
+        log("Transaction executed: accepted NFT")
     }
 }

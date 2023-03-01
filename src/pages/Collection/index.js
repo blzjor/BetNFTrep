@@ -107,8 +107,8 @@ export default function Collection() {
             onChange={(_, val) => setSelectedTab(val)}
             aria-label="Tabs"
           >
-            <Tab label="Owned" id="tab0" aria-controls="tabPanel0" />
-            <Tab label="On Sale" id="tab1" aria-controls="tabPanel1" />
+            <Tab label="Bets Taken" id="tab0" aria-controls="tabPanel0" />
+            <Tab label="Bets Offered" id="tab1" aria-controls="tabPanel1" />
           </Tabs>
         </VuiBox>
         <TabPanel value={selectedTab} index={0}>
