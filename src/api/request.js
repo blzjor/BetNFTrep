@@ -1,7 +1,7 @@
 const APIURL =
   process.env.NODE_ENV === 'development'
-    ? 'http://localhost:5000'
-    : 'https://nftmarketflow-backend.onrender.com';
+    ? 'https://api-betnft.hyperbig.com/'
+    : 'https://api-betnft.hyperbig.com/';
 
 export const callGet = async (url) => {
   let res = {
