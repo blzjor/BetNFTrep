@@ -1,6 +1,6 @@
 # BetNFT / Flow Hackathon 
 
-<img width="20%" src ="https://raw.githubusercontent.com/blzjor/BetNFTrep/main/MicrosoftTeams-image.png?token=GHSAT0AAAAAAB7KBH64J6FSSMRB7S5TYH5OY757MBA">
+<img width="20%" src ="https://github.com/blzjor/BetNFTrep/blob/main/Bet%20NFT%20Logo%202.png?raw=true">
 
 <b> Betting NFT on Flow blockchain - An Hackathon project to create NFTS and Bet NFTs</b>
 
