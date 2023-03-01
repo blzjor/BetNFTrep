@@ -23,6 +23,8 @@ Feb 27 to Feb 28
 
 
 > Github: https://github.com/blzjor/BetNFTrep
+> Web: https://betnft.hyperbig.com/
+
 
 > Tech Stack
 
