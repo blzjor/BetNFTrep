@@ -53,7 +53,7 @@ Feb 27 to Feb 28
 
 <h5>Blaze Web Services Madurai, https://blaze.ws </h5>
 
-> Available Scripts
+<h3>Available Scripts</h3>
 
 In the project directory, you can run:
 
