@@ -6,7 +6,7 @@ export const loadFCLConfig = (env = 'testnet') => {
       fcl
         .config()
         .put('env', env)
-        .put('app.detail.title', 'NFTMarketFlow')
+        .put('app.detail.title', 'BetNFT')
         .put('app.detail.icon', 'https://placekitten.com/g/200/200')
         .put('accessNode.api', 'https://rest-testnet.onflow.org')
         .put('discovery.wallet', 'https://fcl-discovery.onflow.org/testnet/authn')
@@ -19,7 +19,7 @@ export const loadFCLConfig = (env = 'testnet') => {
     //   fcl
     //     .config()
     //     .put('env', env)
-    //     .put('app.detail.title', 'NFTMarketFlow')
+    //     .put('app.detail.title', 'BetNFT')
     //     .put('app.detail.icon', 'https://placekitten.com/g/200/200')
     //     .put('accessNode.api', 'https://rest-mainnet.onflow.org')
     //     .put('discovery.wallet', 'https://fcl-discovery.onflow.org/api/authn')
