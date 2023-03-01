@@ -20,7 +20,7 @@ import {
   navbarIconButton,
   navbarRow,
 } from 'vui-theme/examples/Navbars/DashboardNavbar/styles';
-import header_logo from 'assets/images/bet-nft-logo.png';
+import header_logo from 'assets/images/Bet_NFT_Logo_2.png';
 
 export default function DashboardNavbar() {
   const navigate = useNavigate();
