@@ -24,7 +24,7 @@ Feb 27 to Feb 28
 
 > Github: https://github.com/blzjor/BetNFTrep
 
-> Web App: https://betnft.hyperbig.com/
+> Web App: https://betnft.hyperbig.com/nftmarketflow
 
 
 > Tech Stack
@@ -52,3 +52,19 @@ Feb 27 to Feb 28
 - Amalan Stallone - Graphic Design
 
 <h5>Blaze Web Services Madurai, https://blaze.ws </h5>
+
+<h3>Available Scripts</h3>
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm run dev`
+
+Run the NodeJS server with Nodemon
