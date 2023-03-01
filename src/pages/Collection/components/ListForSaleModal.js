@@ -82,7 +82,7 @@ export default function ListForSaleModal({ open, setOpen, nft, handleListForSale
             color="success"
             variant="contained"
           >
-            List For Sale
+            List Bet
           </VuiButton>
           <VuiButton
             onClick={() => {

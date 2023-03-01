@@ -48,14 +48,15 @@ pub contract NFTMarketplace {
             emit SaleItemRemoved(id: id)
         }
 
-        pub fun purchaseNFT(id: UInt64, recipientCollection: &NFTStore.Collection{NonFungibleToken.CollectionPublic}, payment: @FlowToken.Vault) {            
+        pub fun purchaseNFT(id: UInt64, recipientCollection: &NFTStore.Collection{NonFungibleToken.CollectionPublic}, payment: @FlowToken.Vault) {
+            let price = self.prices[id]
             pre {
-                payment.balance == self.prices[id]: "Payment is not equal to the price of NFT"
+                payment.balance == price: "Payment is not equal to the price of NFT"
             }
             recipientCollection.deposit(token: <- self.OwnerNFTCollection.borrow()!.withdraw(withdrawID: id))
             self.prices.remove(key: id)
             self.FlowTokenVault.borrow()!.deposit(from: <- payment)
-            emit SaleItemPurchased(id: id, price: self.prices[id]!, seller: self.owner?.address)
+            emit SaleItemPurchased(id: id, price: price, seller: self.owner?.address)
         }
 
         pub fun getPrice(id: UInt64): UFix64 {
