@@ -45,7 +45,7 @@ Feb 27 to Feb 28
 
 - Meenakshi - Smart Contract & Full-Stack Developer
 
-- Isakki Muthu - UI/UX Designer
+- Isakki Muthu - Front-end Developer
 
 - Paul Pandi - Smart Contract & Full-Stack Developer
 
